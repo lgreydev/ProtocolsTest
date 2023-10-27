@@ -11,6 +11,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface SLDancer : NSObject
 
+@property (strong, nonatomic) NSString* favouriteDance;
+
+- (void) dance;
+
 @end
 
 NS_ASSUME_NONNULL_END

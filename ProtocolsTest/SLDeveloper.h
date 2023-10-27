@@ -11,6 +11,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface SLDeveloper : NSObject
 
+@property (assign, nonatomic) CGFloat experience;
+
+- (void) work;
+
 @end
 
 NS_ASSUME_NONNULL_END

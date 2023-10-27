@@ -9,4 +9,8 @@
 
 @implementation SLStudent
 
+- (void) study {
+    
+}
+
 @end

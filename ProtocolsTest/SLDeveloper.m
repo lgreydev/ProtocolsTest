@@ -9,4 +9,8 @@
 
 @implementation SLDeveloper
 
+- (void) work {
+    
+}
+
 @end

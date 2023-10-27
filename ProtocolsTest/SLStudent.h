@@ -9,7 +9,11 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface SLStudent : SLObject
+@interface SLStudent : NSObject
+
+@property (strong, nonatomic) NSString* universityName;
+
+- (void) study;
 
 @end
 

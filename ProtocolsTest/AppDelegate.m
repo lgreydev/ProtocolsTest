@@ -6,6 +6,10 @@
 //
 
 #import "AppDelegate.h"
+#import "SLPatient.h"
+#import "SLStudent.h"
+#import "SLDancer.h"
+#import "SLDeveloper.h"
 
 @interface AppDelegate ()
 
@@ -16,6 +20,19 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    SLDancer* dancer1 = [[SLDancer alloc] init];
+    SLDancer* dancer2 = [[SLDancer alloc] init];
+    
+    SLStudent* student1 = [[SLStudent alloc] init];
+    SLStudent* student2 = [[SLStudent alloc] init];
+    SLStudent* student3 = [[SLStudent alloc] init];
+    
+    SLDeveloper* developer1 = [[SLDeveloper alloc] init];
+    
+    NSArray* patients = [NSArray arrayWithObjects: dancer1, student1, developer1, student2, student3, dancer2, nil];
+    
+    
     return YES;
 }
 

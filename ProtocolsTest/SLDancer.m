@@ -9,4 +9,8 @@
 
 @implementation SLDancer
 
+- (void) dance {
+    
+}
+
 @end

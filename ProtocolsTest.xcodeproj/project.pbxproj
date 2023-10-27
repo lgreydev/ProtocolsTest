@@ -14,6 +14,9 @@
 		5EC641752AEBB9F200D554ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EC641742AEBB9F200D554ED /* Assets.xcassets */; };
 		5EC641782AEBB9F200D554ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EC641762AEBB9F200D554ED /* LaunchScreen.storyboard */; };
 		5EC6417B2AEBB9F200D554ED /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EC6417A2AEBB9F200D554ED /* main.m */; };
+		5EC641832AEBBC1700D554ED /* SLStudent.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EC641822AEBBC1700D554ED /* SLStudent.m */; };
+		5EC641862AEBBCCE00D554ED /* SLDancer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EC641852AEBBCCE00D554ED /* SLDancer.m */; };
+		5EC6418D2AEBC11B00D554ED /* SLDeveloper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EC6418C2AEBC11B00D554ED /* SLDeveloper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +32,13 @@
 		5EC641772AEBB9F200D554ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5EC641792AEBB9F200D554ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5EC6417A2AEBB9F200D554ED /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5EC641812AEBBC1700D554ED /* SLStudent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SLStudent.h; sourceTree = "<group>"; };
+		5EC641822AEBBC1700D554ED /* SLStudent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SLStudent.m; sourceTree = "<group>"; };
+		5EC641842AEBBCCE00D554ED /* SLDancer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SLDancer.h; sourceTree = "<group>"; };
+		5EC641852AEBBCCE00D554ED /* SLDancer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SLDancer.m; sourceTree = "<group>"; };
+		5EC6418A2AEBBFAB00D554ED /* SLPatient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SLPatient.h; sourceTree = "<group>"; };
+		5EC6418B2AEBC11B00D554ED /* SLDeveloper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SLDeveloper.h; sourceTree = "<group>"; };
+		5EC6418C2AEBC11B00D554ED /* SLDeveloper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SLDeveloper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +82,13 @@
 				5EC641762AEBB9F200D554ED /* LaunchScreen.storyboard */,
 				5EC641792AEBB9F200D554ED /* Info.plist */,
 				5EC6417A2AEBB9F200D554ED /* main.m */,
+				5EC641812AEBBC1700D554ED /* SLStudent.h */,
+				5EC641822AEBBC1700D554ED /* SLStudent.m */,
+				5EC641842AEBBCCE00D554ED /* SLDancer.h */,
+				5EC641852AEBBCCE00D554ED /* SLDancer.m */,
+				5EC6418B2AEBC11B00D554ED /* SLDeveloper.h */,
+				5EC6418C2AEBC11B00D554ED /* SLDeveloper.m */,
+				5EC6418A2AEBBFAB00D554ED /* SLPatient.h */,
 			);
 			path = ProtocolsTest;
 			sourceTree = "<group>";
@@ -147,7 +164,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				5EC641702AEBB9F100D554ED /* ViewController.m in Sources */,
+				5EC641832AEBBC1700D554ED /* SLStudent.m in Sources */,
 				5EC6416A2AEBB9F100D554ED /* AppDelegate.m in Sources */,
+				5EC6418D2AEBC11B00D554ED /* SLDeveloper.m in Sources */,
+				5EC641862AEBBCCE00D554ED /* SLDancer.m in Sources */,
 				5EC6417B2AEBB9F200D554ED /* main.m in Sources */,
 				5EC6416D2AEBB9F100D554ED /* SceneDelegate.m in Sources */,
 			);
