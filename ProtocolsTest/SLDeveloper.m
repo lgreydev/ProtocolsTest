@@ -1,12 +1,12 @@
 //
-//  Developer.m
+//  SLDeveloper.m
 //  ProtocolsTest
 //
 //  Created by Sergey Lukaschuk on 2023-10-27.
 //
 
-#import "Developer.h"
+#import "SLDeveloper.h"
 
-@implementation Developer
+@implementation SLDeveloper
 
 @end
