@@ -11,9 +11,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @protocol SLPatient
 
+@required
 @property (strong, nonatomic) NSString* name;
 
-@required
 - (BOOL) areYouOk;
 - (void) takePill;
 - (void) makeShot;

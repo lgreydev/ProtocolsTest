@@ -6,12 +6,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "SLPatient.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface SLDancer : NSObject
+@interface SLDancer : NSObject <SLPatient>
 
 @property (strong, nonatomic) NSString* favouriteDance;
+@property (strong, nonatomic) NSString* name;
 
 - (void) dance;
 

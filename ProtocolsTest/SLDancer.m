@@ -13,4 +13,22 @@
     
 }
 
+#pragma mark - SLPatient
+
+- (BOOL)areYouOk {
+    BOOL ok = arc4random() % 2;
+    
+    NSLog(@"Is Dancer %@ ok? %@", self.name,  ok ? @"YES" : @"NO");
+    
+    return  ok;
+}
+
+- (void)takePill {
+    NSLog(@"Dancer %@ takes a pill", self.name);
+}
+
+- (void)makeShot {
+    NSLog(@"Dancer %@ takes makes a shot", self.name);
+}
+
 @end

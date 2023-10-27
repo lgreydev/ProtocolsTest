@@ -6,12 +6,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "SLPatient.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface SLDeveloper : NSObject
+@interface SLDeveloper : NSObject <SLPatient>
 
-@property (assign, nonatomic) CGFloat experience;
+@property (assign, nonatomic) CGFloat* experience;
+@property (strong, nonatomic) NSString* name;
 
 - (void) work;
 
