@@ -30,8 +30,34 @@
     
     SLDeveloper* developer1 = [[SLDeveloper alloc] init];
     
+    dancer1.name = @"dancer1";
+    dancer2.name = @"dancer2";
+    
+    student1.name = @"student1";
+    student2.name = @"student2";
+    student3.name = @"student3";
+    
+    developer1.name = @"developer1";
+    
     NSArray* patients = [NSArray arrayWithObjects: dancer1, student1, developer1, student2, student3, dancer2, nil];
     
+    /*
+    for (int i = 0; i < [patients count]; i++) {
+        id <SLPatient> patient = [patients objectAtIndex:i];
+    }
+     */
+    
+    for (id <SLPatient> patient in patients) {
+        NSLog(@"Patient name =  %@", patient.name);
+        
+        if (![patient areYouOk]) {
+            [patient takePill];
+            
+            if (![patient areYouOk]) {
+                [patient makeShot];
+            }
+        }
+    }
     
     return YES;
 }
