@@ -39,7 +39,9 @@
     
     developer1.name = @"developer1";
     
-    NSArray* patients = [NSArray arrayWithObjects: dancer1, student1, developer1, student2, student3, dancer2, nil];
+    NSObject* obj = [[NSObject alloc] init];
+    
+    NSArray* patients = [NSArray arrayWithObjects: obj, dancer1, student1, developer1, student2, student3, dancer2, nil];
     
     /*
     for (int i = 0; i < [patients count]; i++) {
@@ -48,8 +50,21 @@
      */
     
     for (id <SLPatient> patient in patients) {
-        NSLog(@"Patient name =  %@", patient.name);
-        
+        if ([patient conformsToProtocol:@protocol(SLPatient)]) {
+            NSLog(@"Patient name =  %@", patient.name);
+            
+            if ([patient respondsToSelector:@selector(howIsYourFamily)]) {
+                NSLog(@"How is your family? - %@", [patient howIsYourFamily]);
+            }
+            
+            if ([patient respondsToSelector:@selector(howIsYourJob)]) {
+                NSLog(@"How is your job? - %@", [patient howIsYourJob]);
+            }
+        }  else {
+            NSLog(@"FAKE!!!");
+        }
+    
+        /*
         if (![patient areYouOk]) {
             [patient takePill];
             
@@ -57,6 +72,7 @@
                 [patient makeShot];
             }
         }
+         */
     }
     
     return YES;

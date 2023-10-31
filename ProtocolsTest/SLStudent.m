@@ -31,4 +31,8 @@
     NSLog(@"Student %@ takes makes a shot", self.name);
 }
 
+- (NSString*) howIsYourFamily {
+    return @"My family is doing well!";
+}
+
 @end
